@@ -27,7 +27,7 @@ class SectionCard extends StatelessWidget {
                 Expanded(
                   child: Text(title, style: Theme.of(context).textTheme.titleMedium),
                 ),
-                ?trailing,
+                if (trailing != null) trailing!,
               ],
             ),
             const SizedBox(height: AppTokens.space3),

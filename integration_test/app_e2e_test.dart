@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:rm_breeding_mobile/app/app.dart';
 import 'package:rm_breeding_mobile/core/auth/auth_state.dart';
-import 'package:rm_breeding_mobile/core/database/app_database.dart';
+import 'package:rm_breeding_mobile/core/db/app_database.dart';
 import 'package:rm_breeding_mobile/core/sync/sync_engine.dart';
 
 void main() {

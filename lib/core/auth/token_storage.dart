@@ -17,7 +17,7 @@ class TokenStorage {
   final FlutterSecureStorage _storage;
 
   Future<void> save({
-    required String accessToken,
+    String? accessToken,
     String? refreshToken,
     String? tenantId,
     String? email,
@@ -25,7 +25,9 @@ class TokenStorage {
     String? membershipsJson,
     bool? platformAdmin,
   }) async {
-    await _storage.write(key: _accessTokenKey, value: accessToken);
+    if (accessToken != null) {
+      await _storage.write(key: _accessTokenKey, value: accessToken);
+    }
     if (refreshToken != null) {
       await _storage.write(key: _refreshTokenKey, value: refreshToken);
     }

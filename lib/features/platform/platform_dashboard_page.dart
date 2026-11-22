@@ -64,7 +64,7 @@ class PlatformDashboardPage extends ConsumerWidget {
         children: [
           Text(label, style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 14)),
           const SizedBox(height: 6),
-          Text(value, style: TextStyle(color: color, fontWeight: FontWeight.extrabold, fontSize: 22)),
+          Text(value, style: TextStyle(color: color, fontWeight: FontWeight.w800, fontSize: 22)),
         ],
       ),
     );

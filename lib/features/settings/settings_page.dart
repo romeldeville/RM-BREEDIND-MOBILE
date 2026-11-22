@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/auth/auth_controller.dart';
+import '../../core/auth/auth_state.dart';
 import '../../core/config/app_config.dart';
 import '../../core/i18n/locale_controller.dart';
 import '../../core/notifications/push_controller.dart';
